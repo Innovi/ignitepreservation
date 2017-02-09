@@ -1,7 +1,64 @@
 .site-footer {
-  height: 100px;
-  margin: 10px 0;
-  padding: 35px 0;
-  font-size: 12px;
-  color: @gray-dark;
+  margin-top: 5rem;
+}
+
+.site-info {
+  padding-top: 2.5rem;
+  padding-bottom: 3.5rem;
+  color: #fff;
+  background-color: @gray-dark;
+}
+.site-contact {
+  .list-unstyled {
+    > li {
+      margin-bottom: 5px;
+    }
+  }
+}
+.copyright-info,
+.dev-info {
+  background-color: @gray-darker;
+}
+.copyright-info {
+  padding-top: 1rem;
+  color: #fff;
+}
+.dev-info {
+  padding: 1.2rem 0 2rem;
+  color: @gray-light;
+  > a {
+    color: @brand-success;
+  }
+}
+
+.social-links {
+  background-color: @gray-lighter;
+  padding: .3rem 0;
+
+  .list-inline {
+    padding-top: 1rem;
+  }
+
+  .fa {
+    width: 32px;
+    padding: 8px 0;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  .facebook {
+    color: @facebook;
+  }
+  .twitter {
+    color: @twitter;
+  }
+  .linkedin {
+    color: @linkedin;
+  }
+  .youtube {
+    color: @youtube;
+  }
+  .googleplus {
+    color: @googleplus;
+  }
 }

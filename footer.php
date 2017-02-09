@@ -13,13 +13,44 @@
 
         </div> <!-- #content -->
 
-        <footer id="colophon" class="site-footer" role="contentinfo">
-            <div class="site-info text-center">
-                <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wp-theme-boilerplate' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'wp-theme-boilerplate' ), 'WordPress' ); ?></a>
-                <span class="sep"> | </span>
-                <?php printf( esc_html__( '%1$s by %2$s.', 'wp-theme-boilerplate' ), 'WP Theme Boilerplate', '<a href="http://jobayerarman.github.io/" rel="designer">Jobayer Arman</a>' ); ?>
-            </div><!-- .site-info -->
-        </footer><!-- #colophon -->
+        <footer id="colophon" class="site-footer row" role="contentinfo">
+            <div class="col-md-12 footer-wrapper">
+
+                <?php get_template_part( 'template-parts/footer/footer', 'social' ); ?>
+
+                <div class="row site-info">
+                    <div class="col-md-4 site-about">
+                        <h5>About Ignite Preservation</h5>
+                        <p class="text-justify">Established in 2016, IGNITE IT is a preservation and technology-enabled services company offering an integrated set of back-office and customer facing front-office services that support the entire customer lifecycle.</p>
+                    </div>
+                    <div class="col-md-6 col-md-offset-2 site-contact">
+                        <h5>Contact Info</h5>
+                        <ul class="list-unstyled">
+                            <li>Ignite Preservation</li>
+                            <li><i class="fa fa-home" aria-hidden="true"></i> 33 Topkhana Road, Meherbaplaza (8th Floor), Purana Paltan, Dhaka-1000</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+8801985553800">+88 01985-553-800</a></li>
+                            <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:contact@ignitepreservation.com">contact@ignitepreservation.com</a></li>
+                            <li><a href="http://www.ignitepreservation.com">www.ignitepreservation.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="copyright-info col-md-12 text-center">
+                        <div class="copyright">
+                            <h5>&copy; 2016 - <?php echo date("Y"); ?> Ignite Preservation <span class="sep"> | </span>All Rights Reserved</h5>
+                        </div>
+                    </div>
+                </div><!-- .copyright-info -->
+
+                <div class="row">
+                    <div class="dev-info col-md-12 text-center">
+                        <?php printf( esc_html__( '%1$s by %2$s.', 'ignitepreservation' ), 'Design and Developed', '<a href="http://jobayerarman.github.io/" rel="developer">Innovi</a>' ); ?>
+                    </div>
+                </div><!-- .dev-info -->
+
+            </div><!-- .footer-wrapper -->
+        </footer><!-- .site-footer -->
     </div><!-- #page -->
 
     <?php wp_footer(); ?>

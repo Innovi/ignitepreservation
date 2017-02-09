@@ -29,15 +29,15 @@
 
 // START Editing Project Variables.
 // Project related.
-var project              = 'WPThemeBoilerplate';                      // Project Name
-var projectURL           = 'http://wptheme.dev';                      // Project URL
+var project              = 'IgnitePreservation';                      // Project Name
+var projectURL           = 'http://ignitepreservation.dev';                      // Project URL
 var productURL           = './';                                      // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder
 
 // Translation related.
-var text_domain          = 'wp-theme-boilerplate';                    // Your textdomain here
-var destFile             = 'wp-theme-boilerplate.pot';                // Name of the transalation file
-var packageName          = 'wp-theme-boilerplate';                    // Package name
-var bugReport            = 'http:// jobayerarman.github.io/';         // Where can users report bugs
+var text_domain          = 'ignitepreservation';                    // Your textdomain here
+var destFile             = 'ignitepreservation.pot';                // Name of the transalation file
+var packageName          = 'ignitepreservation';                    // Package name
+var bugReport            = 'http://jobayerarman.github.io/';         // Where can users report bugs
 var lastTranslator       = 'Jobayer Arman <carbonjha@gmail.com>';     // Last translator Email ID
 var team                 = 'Jobayer Arman <carbonjha@email.com>';     // Team's Email ID
 var translatePath        = './languages'                              // Where to save the translation files

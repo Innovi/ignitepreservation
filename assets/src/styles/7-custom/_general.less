@@ -1,24 +1,20 @@
-.site {
-  .container();
+.top-bar-content {
+  background-color: @gray-dark;
+  color: #fff;
+  padding: 2px 0 5px;
 }
 
-.site-header,
-.site-content,
-.site-footer {
-  .make-row();
-}
-
-.site-branding,
-.main-navigation,
-.site-info {
-  .make-sm-column(12);
+.wp-custom-header {
+  > img {
+    .center-block();
+  }
 }
 
 .content-area {
-  .make-sm-column(9);
+
 }
+
 .widget-area {
-  .make-sm-column(3);
 
   section {
     &:not(:last-child) {

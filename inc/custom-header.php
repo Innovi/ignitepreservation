@@ -18,27 +18,27 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses wp_theme_boilerplate_header_style()
+ * @uses ignitepreservation_header_style()
  */
-function wp_theme_boilerplate_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'wp_theme_boilerplate_custom_header_args', array(
-		'default-image'          => '',
+function ignitepreservation_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'ignitepreservation_custom_header_args', array(
+		'default-image'          => get_parent_theme_file_uri( '/assets/images/ignite-logo.png' ),
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
+		'width'                  => 250,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'wp_theme_boilerplate_header_style',
+		'wp-head-callback'       => 'ignitepreservation_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'wp_theme_boilerplate_custom_header_setup' );
+add_action( 'after_setup_theme', 'ignitepreservation_custom_header_setup' );
 
-if ( ! function_exists( 'wp_theme_boilerplate_header_style' ) ) :
+if ( ! function_exists( 'ignitepreservation_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @see wp_theme_boilerplate_custom_header_setup().
+ * @see ignitepreservation_custom_header_setup().
  */
-function wp_theme_boilerplate_header_style() {
+function ignitepreservation_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	/*
