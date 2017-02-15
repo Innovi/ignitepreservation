@@ -27,33 +27,35 @@
 
             <header id="masthead" class="site-header row" role="banner">
 
-                <div class="header-top col-sm-12">
-                    <?php get_template_part( 'template-parts/header/header', 'top' ); ?>
-                </div> <!-- .header-top -->
+                <div class="col-md-12 header-wrapper">
+                    <div class="row">
+                         <div class="header-top col-sm-12">
+                             <?php get_template_part( 'template-parts/header/header', 'top' ); ?>
+                         </div>
+                     </div> <!-- .header-top -->
 
-                <div class="site-branding col-md-3">
-                    <?php
-                    if ( is_front_page() && is_home() ) : ?>
-                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                    <?php else : ?>
-                        <h2 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
-                    <?php
-                    endif;
+                    <div class="row">
+                        <div class="site-branding col-md-4">
+                            <?php
+                            if ( is_front_page() && is_home() ) : ?>
+                                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                            <?php else : ?>
+                                <h2 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
+                            <?php
+                            endif;
 
-                    $description = get_bloginfo( 'description', 'display' );
-                    if ( $description || is_customize_preview() ) : ?>
-                        <h6 class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></h6>
-                    <?php
-                    endif; ?>
+                            $description = get_bloginfo( 'description', 'display' );
+                            if ( $description || is_customize_preview() ) : ?>
+                                <h6 class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></h6>
+                            <?php
+                            endif; ?>
+                        </div>
+                    </div><!-- .site-branding -->
 
-                    <div class="custom-header-media">
-                        <?php the_custom_header_markup(); ?>
-                    </div>
-                </div><!-- .site-branding -->
-
-                <?php if ( has_nav_menu( 'primary' ) ) : ?>
-                    <?php get_template_part( 'template-parts/navigation/navigation', 'primary' ); ?>
-                <?php endif; ?>
+                    <?php if ( has_nav_menu( 'primary' ) ) : ?>
+                        <?php get_template_part( 'template-parts/navigation/navigation', 'primary' ); ?>
+                    <?php endif; ?>
+                </div> <!-- header-wrapper -->
             </header> <!-- #masthead -->
 
             <div id="content" class="site-content row">

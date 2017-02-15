@@ -24,8 +24,8 @@ function ignitepreservation_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'ignitepreservation_custom_header_args', array(
 		'default-image'          => get_parent_theme_file_uri( '/assets/images/ignite-logo.png' ),
 		'default-text-color'     => '000000',
-		'width'                  => 250,
-		'height'                 => 250,
+		'width'                  => 120,
+		'height'                 => 120,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'ignitepreservation_header_style',
 	) ) );

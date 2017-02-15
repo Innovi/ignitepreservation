@@ -5,3 +5,17 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+// Vertical-align a block level element
+.vertical-align(@position: relative) {
+  position: @position;
+  top: 50%;
+  .translateY(-50%);
+}
+
+// Vertical-align using flex
+.vertical-align-flex() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

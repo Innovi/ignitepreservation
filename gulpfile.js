@@ -192,7 +192,7 @@ gulp.task( 'browser-sync', function() {
     injectChanges: true,
 
     // The small pop-over notifications in the browser are not always needed/wanted
-    notify: false,
+    notify: true,
   });
 });
 

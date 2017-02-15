@@ -1,10 +1,10 @@
 <?php
 /**
- * wp-theme-boilerplate functions and definitions.
+ * ignitepreservation functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package wp-theme-boilerplate
+ * @package ignitepreservation
  */
 
 // Implement the Custom Header feature.

@@ -13,7 +13,9 @@
     </div>
     <div class="col-md-6">
         <div class="pull-right">
-            <h6>Hotline: <a href="tel:+9900667799">+9900667799</a> Email: <a href="mailto:info@ignite.com">info@ignite.com</a></h6>
+            <h6>Hotline: <a href="tel:+8809678777000">+8809678777000</a> <span class="sep"></span> Email: <a href="mailto:info@ignitepreservation.com">info@ignitepreservation.com</a></h6>
         </div>
     </div>
 </div> <!-- .top-header-bar -->
+
+<?php get_template_part( 'template-parts/header/header', 'social' ); ?>
