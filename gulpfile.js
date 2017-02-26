@@ -305,7 +305,7 @@ gulp.task( 'translate', function() {
 /**
  * Default Gulp task
  */
-gulp.task( 'default', gulpSequence('clean:all', 'styles', 'scripts', 'translate', 'images'));
+gulp.task( 'default', gulpSequence('clean:all', 'styles', 'scripts'));
 
 /**
  * Run all the tasks sequentially

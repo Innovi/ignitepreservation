@@ -24,16 +24,47 @@
     height: auto !important;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 70px;
+    // margin-left: 70px;
   }
 }
 
 #carousel {
+  margin-top: -40px;
   margin-bottom: 25px;
 
   .carousel-wrapper {
     margin-left: -15px;
     margin-right: -15px;
+  }
+}
+.caption-wrap {
+  background-color: transparent !important;
+  opacity: 1 !important;
+  top: 80px !important;
+  width: auto !important;
+
+  .caption {
+    padding: 5px 0 !important;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 10px !important;
+      }
+      text-transform: capitalize;
+      font-size: 16px;
+      padding: 6px 15px;
+      opacity: 0.9;
+      background-color: @gray-base;
+    }
+
+    .slider-highlight {
+      text-transform: uppercase;
+      color: #fff;
+      background-color: @brand-primary;
+      font-size: @font-size-h4;
+      line-height: @headings-line-height + 0.35;
+      font-weight: @headings-font-weight;
+    }
   }
 }
 
@@ -54,7 +85,10 @@
   background-color: @gray-brand;
   padding-top: 10px;
   padding-bottom: 6px;
-  padding-left: 35px;
+
+  &.left-margin {
+    padding-left: 75px;
+  }
 }
 .offer-title {
   text-transform: uppercase;
@@ -65,7 +99,6 @@
 
 #expertise {
   .row {
-    background-color: @gray-brand;
     padding: 30px 75px;
   }
 
@@ -92,7 +125,6 @@
 
 }
 
-
 .widget-area {
   section {
     &:not(:last-child) {
@@ -106,7 +138,7 @@
 }
 
 .social-links {
-  padding: .2rem 0;
+  padding: 0;
 
   .list-inline {
     padding-top: 1rem;
@@ -151,13 +183,26 @@
 
 .wpcf7 {
   margin-left: -15px !important;
-  padding-left: 75px !important;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
   background-color: @gray-dark;
   color: @brand-primary;
 
-  .wpcf7-form-control {
-    margin-top: 6px !important;
+  .wpcf7-form {
+    width: 70% !important;
+    margin: 0 auto !important;
   }
+
+  .wpcf7-form-control {
+    margin-top: 10px !important;
+  }
+}
+
+.title-color {
+  color: @brand-primary;
+}
+
+.title-bg {
+  color: @brand-primary;
+  background-color: @gray-brand;
 }

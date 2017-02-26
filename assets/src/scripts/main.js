@@ -1,4 +1,6 @@
 (function($) {
   // Load Events
-  $(document).ready();
-})(jQeuery); // Fully reference jQuery after this point.
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+})(jQuery); // Fully reference jQuery after this point.
