@@ -34,7 +34,7 @@
                          </div>
                      </div> <!-- .header-top -->
 
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="site-branding col-md-4">
                             <?php
                             if ( is_front_page() && is_home() ) : ?>
@@ -50,7 +50,7 @@
                             <?php
                             endif; ?>
                         </div>
-                    </div><!-- .site-branding -->
+                    </div> --><!-- .site-branding -->
 
                     <?php if ( has_nav_menu( 'primary' ) ) : ?>
                         <?php get_template_part( 'template-parts/navigation/navigation', 'primary' ); ?>

@@ -1,5 +1,5 @@
 .top-bar-content {
-  background-color: @gray-dark;
+  background-color: @gray-darker;
   color: #fff;
   padding: 2px 0 5px;
 
@@ -24,7 +24,7 @@
     height: auto !important;
     padding-top: 10px;
     padding-bottom: 10px;
-    // margin-left: 70px;
+    margin-left: 70px;
   }
 }
 
@@ -138,7 +138,10 @@
 }
 
 .social-links {
-  padding: 0;
+
+  a {
+    color: @gray-lighter;
+  }
 
   .list-inline {
     padding-top: 1rem;
@@ -150,31 +153,26 @@
   }
 
   .facebook {
-    color: @gray-light;
     &:hover {
       color: @facebook;
     }
   }
   .twitter {
-    color: @gray-light;
     &:hover {
       color: @twitter;
     }
   }
   .linkedin {
-    color: @gray-light;
     &:hover {
       color: @linkedin;
     }
   }
   .youtube {
-    color: @gray-light;
     &:hover {
       color: @youtube;
     }
   }
   .googleplus {
-    color: @gray-light;
     &:hover {
       color: @googleplus;
     }
@@ -198,11 +196,31 @@
   }
 }
 
+.team-social {
+  a {
+    color: @gray-light;
+  }
+}
+.team-description {
+  li {
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
 .title-color {
   color: @brand-primary;
 }
-
 .title-bg {
   color: @brand-primary;
   background-color: @gray-brand;
+}
+
+.bg-dark {
+  background-color: @gray-dark;
+}
+.bg-darker {
+  background-color: @gray-darker;
 }
